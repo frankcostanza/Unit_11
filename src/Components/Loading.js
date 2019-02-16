@@ -1,9 +1,9 @@
 import React from 'react';
 
-//Spinner while waiting for results
+//Component while waiting for results
 
 const Loading = () => (
-    <div className="lds-dual-ring"></div>
+    <div>Loading...</div>
 );
 
 export default Loading;
