@@ -22,7 +22,12 @@ export default class Results extends Component  {
     }
 
 
-    
+    componentDidUpdate(prevProps) {
+    if (this.props.query !== prevProps.query) {
+        this.performSearch(this.props.query);
+    }
+}
+
 
     //Fetch data from flickr
     performSearch = () => {

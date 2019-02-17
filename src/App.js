@@ -19,7 +19,7 @@ import NotFound from "./Components/NotFound";
 export default class App extends Component {
     render() {
         return (
-            <BrowserRouter forceRefresh={true}>
+            <BrowserRouter>
                 <div className="container">
                     <SearchForm/>
                     <Nav />
