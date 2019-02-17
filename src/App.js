@@ -16,7 +16,6 @@ import Nav from "./Components/Nav";
 import StartSearch from './Components/StartSearch';
 import NotFound from "./Components/NotFound";
 
-
 export default class App extends Component {
     render() {
         return (
@@ -27,6 +26,9 @@ export default class App extends Component {
                     <div>
                     <Switch>
                         <Route exact path="/" component={StartSearch}/>
+                        <Route exact path="soccer" render={ () => <Results query="soccer"/>} />
+                        <Route exact path="triathlon" render={ () => <Results query="triathlon"/>} />
+                        <Route exact path="climbing" render={ () => <Results query="climbing"/>} />
                         <Route path="/:query" render={ props => <Results query={ props.match.params.query }/> } />
                         <Route component={NotFound}/>
                     </Switch>

@@ -15,7 +15,7 @@ class SearchForm extends Component {
         e.preventDefault();
         e.currentTarget.reset();
         let searchQuery = this.state.searchText;
-        let path = `/${searchQuery}`;
+        let path = `/${searchQuery}`;           // for me: explaind in the Router 4 Basic in Video 3.4 and 3.5
         this.props.history.push(path);
     };
 

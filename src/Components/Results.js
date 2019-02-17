@@ -21,6 +21,9 @@ export default class Results extends Component  {
         this.performSearch();
     }
 
+
+    
+
     //Fetch data from flickr
     performSearch = () => {
         axios.get(`https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=${apiKey}&tags=${this.props.query}&per_page=16&format=json&nojsoncallback=1`)
